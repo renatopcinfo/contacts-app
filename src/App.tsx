@@ -1,10 +1,11 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import Contacts from './containers/Contacts';
 
 function App() {
   return (
     <>
-      <div className="App"></div>
+      <Contacts />
       <Styles />
     </>
   );
@@ -13,6 +14,7 @@ function App() {
 const Styles = createGlobalStyle`
   html {
     font-size: 16px;
+    font-family: sans-serif;
   }
 
   html, body, #root {
